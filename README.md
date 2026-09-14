@@ -188,3 +188,23 @@ The project helped strengthen my understanding of frontend development, responsi
 Frontend Development | Programming | Problem Solving
 
 This project represents my learning and practical experience in building responsive and interactive web applications.
+
+---
+
+## 🌐 Live Demo
+
+The project is deployed using GitHub Pages.
+
+🔗 **Live Website:**  
+https://muskaanverse96.github.io/SCT_WD_1/
+
+---
+
+## 💻 Source Code
+
+The complete source code is available on GitHub.
+
+🔗 **GitHub Repository:**  
+https://github.com/muskaanverse96/SCT_WD_1
+
+---
