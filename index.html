@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunezzz | Music Without Borders</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- =========================
+     TOP NAVIGATION
+========================= -->
+
+<header class="top-navigation" id="topNavigation">
+
+   <!-- TUNEZZ BRAND -->
+<div class="brand">
+
+    <a href="#home" class="tunezz-brand">
+
+        <div class="tunezz-icon">
+            <i class="fa-solid fa-compact-disc"></i>
+            <i class="fa-solid fa-music tunezz-note"></i>
+        </div>
+
+        <div class="tunezz-name">
+            <h2>TUNEZZ</h2>
+            <span>MUSIC WITHOUT BORDERS</span>
+        </div>
+
+    </a>
+
+</div>
+
+</div>
+
+
+    <!-- MOBILE MENU -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav" id="mainNav">
+
+        <a href="#home" class="nav-link active">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </a>
+
+        <a href="#discover" class="nav-link">
+            <i class="fa-solid fa-compass"></i>
+            <span>Discover</span>
+        </a>
+
+        <a href="#trending" class="nav-link">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Charts</span>
+        </a>
+
+        <a href="#playlists" class="nav-link">
+            <i class="fa-solid fa-list"></i>
+            <span>Playlists</span>
+        </a>
+
+        <a href="#languages" class="nav-link">
+            <i class="fa-solid fa-language"></i>
+            <span>Languages</span>
+        </a>
+
+        <a href="#artists" class="nav-link">
+            <i class="fa-solid fa-microphone"></i>
+            <span>Artists</span>
+        </a>
+
+        <!-- FOLLOW US -->
+        <div class="nav-follow">
+            <span>Follow</span>
+
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+
+    </nav>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="nav-tools">
+
+        <!-- LOGIN -->
+        <button class="login-btn">
+            <i class="fa-solid fa-user"></i>
+            Login
+        </button>
+
+        <!-- SIGN UP -->
+        <button class="signup-btn">
+            Sign Up
+        </button>
+
+        <!-- THEME -->
+        <button class="nav-icon-btn" id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- FAVORITES -->
+        <button class="nav-icon-btn" id="favoriteNavBtn">
+            <i class="fa-solid fa-heart"></i>
+            <span class="favorite-count">0</span>
+        </button>
+
+    </div>
+
+</header>
+    <!-- Main content -->
+    <main class="main-content">
+
+        <!-- Top bar -->
+        <header class="topbar">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search for artists, songs, albums...">
+            </div>
+
+            <div class="top-actions">
+                <button class="icon-btn">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+                <button class="icon-btn heart-top">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+                <div class="profile">
+                    <span>A</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero" id="discover">
+            <div class="hero-image"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <div class="hero-left">
+                    <span class="hero-small">TRENDING NOW</span>
+                    <h2>Kaathalae Kaathalae</h2>
+                    <p>Vijay Sethupathi <span>•</span> Trisha Krishnan</p>
+                    <div class="hero-tags">
+                        <span>Tamil</span>
+                        <span>Romantic</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <a class="play-main"
+                        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYk26H1sGFg9aLkRoN1DmcezGRkSn9m7PckD8OfpPn-w&s=10"
+                        target="_blank"
+                        onclick="playSong('Kaathalae Kaathalae', 'Vijay Sethupathi')">
+                        <i class="fa-solid fa-circle-play"></i>
+                        Play Now
+                        </a>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-arrows">
+                    <button><i class="fa-solid fa-chevron-left"></i></button>
+                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div class="hero-dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+
+        <!-- Trending -->
+        <section class="section" id="trending">
+            <div class="section-heading">
+                <h2>
+                    <i class="fa-solid fa-wave-square"></i>
+                    Trending Songs
+                </h2>
+                <button>View All <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="song-grid">
+
+                <article class="song-card" data-language="Hindi" data-song="Tum Kya Mile">
+                    <div class="cover">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5NMk9e8BHHdnBxx-cGnTGOyPioATSL2jqFgnpx2Sh6g&s=10" alt="Tum Kya Mile">
+                        <button class="card-play" onclick="playSong('Tum Kya Mile', 'Arijit Singh & Shreya Ghoshal')">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="song-info">
+                        <h3>Tum Kya Mile</h3>
+                        <p>Arijit Singh & Shreya Ghoshal</p>
+                        <div class="song-bottom">
+                            <span class="tag hindi-tag">Hindi</span>
+                            <button class="favorite" onclick="toggleFavorite(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="song-card" data-language="Telugu" data-song="Samajavaragamana">
+                    <div class="cover">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXlLCvUdPA7HdLt_oxQ8u8b2yygaKcVeDtkFHBtKpr-A&s=10" alt="Samajavaragamana">
+                        <button class="card-play" onclick="playSong('Samajavaragamana', 'Sid Sriram')">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="song-info">
+                        <h3>Samajavaragamana</h3>
+                        <p>Sid Sriram</p>
+                        <div class="song-bottom">
+                            <span class="tag telugu-tag">Telugu</span>
+                            <button class="favorite" onclick="toggleFavorite(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="song-card" data-language="Hindi" data-song="Chaleya">
+                    <div class="cover">
+                        <img src="https://c.saavncdn.com/026/Chaleya-From-Jawan-Hindi-2023-20230814014337-500x500.jpg" alt="Chaleya">
+                        <button class="card-play" onclick="playSong('Chaleya', 'Arijit Singh & Shilpa Rao')">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="song-info">
+                        <h3>Chaleya</h3>
+                        <p>Arijit Singh & Shilpa Rao</p>
+                        <div class="song-bottom">
+                            <span class="tag hindi-tag">Hindi</span>
+                            <button class="favorite" onclick="toggleFavorite(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="song-card" data-language="Malayalam" data-song="Malare">
+                    <div class="cover">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbcoxm9b8SlWTcGoSCnpMhiNbcEb1-qMoUbnujP9Tg7A&s=10" alt="Malare">
+                        <button class="card-play" onclick="playSong('Malare', 'Vijay Yesudas')">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="song-info">
+                        <h3>Malare</h3>
+                        <p>Vijay Yesudas</p>
+                        <div class="song-bottom">
+                            <span class="tag malayalam-tag">Malayalam</span>
+                            <button class="favorite" onclick="toggleFavorite(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="song-card" data-language="Tamil" data-song="Kaathalae Kaathalae">
+                    <div class="cover">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYk26H1sGFg9aLkRoN1DmcezGRkSn9m7PckD8OfpPn-w&s=10" alt="Kaathalae Kaathalae">
+                        <button class="card-play" onclick="playSong('Kaathalae Kaathalae', 'Vijay Sethupathi')">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="song-info">
+                        <h3>Kaathalae Kaathalae</h3>
+                        <p>Govind Vasantha</p>
+                        <div class="song-bottom">
+                            <span class="tag tamil-tag">Tamil</span>
+                            <button class="favorite" onclick="toggleFavorite(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Languages -->
+        <section class="section" id="languages">
+            <div class="section-heading">
+                <h2>
+                    <i class="fa-solid fa-globe"></i>
+                    Explore Languages
+                </h2>
+                <button>View All <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="language-grid">
+                <button class="language-card hindi-bg" onclick="filterLanguage('Hindi')">
+                    <strong>हिंदी</strong>
+                    <span>Hindi</span>
+                    <i class="fa-solid fa-music"></i>
+                </button>
+
+                <button class="language-card telugu-bg" onclick="filterLanguage('Telugu')">
+                    <strong>తెలుగు</strong>
+                    <span>Telugu</span>
+                    <i class="fa-solid fa-music"></i>
+                </button>
+
+                <button class="language-card tamil-bg" onclick="filterLanguage('Tamil')">
+                    <strong>தமிழ்</strong>
+                    <span>Tamil</span>
+                    <i class="fa-solid fa-music"></i>
+                </button>
+
+                <button class="language-card malayalam-bg" onclick="filterLanguage('Malayalam')">
+                    <strong>മലയാളം</strong>
+                    <span>Malayalam</span>
+                    <i class="fa-solid fa-music"></i>
+                </button>
+
+                <button class="language-card kannada-bg" onclick="filterLanguage('Kannada')">
+                    <strong>ಕನ್ನಡ</strong>
+                    <span>Kannada</span>
+                    <i class="fa-solid fa-music"></i>
+                </button>
+
+                <button class="language-card bengali-bg" onclick="filterLanguage('Bengali')">
+                    <strong>বাংলা</strong>
+                    <span>Bengali</span>
+                    <i class="fa-solid fa-music"></i>
+                </button>
+
+                <button class="language-card punjabi-bg" onclick="filterLanguage('Punjabi')">
+                    <strong>ਪੰਜਾਬੀ</strong>
+                    <span>Punjabi</span>
+                    <i class="fa-solid fa-music"></i>
+                </button>
+
+                <button class="language-card marathi-bg" onclick="filterLanguage('Marathi')">
+                    <strong>मराठी</strong>
+                    <span>Marathi</span>
+                    <i class="fa-solid fa-music"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Artists -->
+        <section class="section" id="artists">
+            <div class="section-heading">
+                <h2>
+                    <i class="fa-solid fa-microphone-lines"></i>
+                    Popular Artists
+                </h2>
+                <button>View All <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="artist-grid">
+
+                <div class="artist">
+                    <div class="artist-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCc2rNpFc-MT3ZXp_0aPQyFFEqg88lqUZRxH22RaZ_PA&s=10" alt="Arijit Singh">
+                    </div>
+                    <h3>Arijit Singh</h3>
+                    <p>Hindi</p>
+                </div>
+
+                <div class="artist">
+                    <div class="artist-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GY9qTYbcYUkPjmpuhW8MEZSTpYOdn2oEninlBG39yw&s=10" alt="Shreya Ghoshal">
+                    </div>
+                    <h3>Shreya Ghoshal</h3>
+                    <p>Hindi • Bengali</p>
+                </div>
+
+                <div class="artist">
+                    <div class="artist-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr-EgkMyEax3PBWg9xL8Zyg7NBnlO3B4j4nQ5WNkSGtA&s=10" alt="A R Rahman">
+                    </div>
+                    <h3>A. R. Rahman</h3>
+                    <p>Indian</p>
+                </div>
+
+                <div class="artist">
+                    <div class="artist-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKW9ijUksU6SzrOzjLCeENrRRqZe2k8PrFk3IY1Bn1eA&s=10" alt="Sid Sriram">
+                    </div>
+                    <h3>Sid Sriram</h3>
+                    <p>Telugu • Tamil</p>
+                </div>
+
+                <div class="artist">
+                    <div class="artist-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuuW1RDfQqQDk5KPfiRP8a4fiT03EsbhGYpCwdNh2Juw&s=10" alt="Anirudh">
+                    </div>
+                    <h3>Anirudh Ravichander</h3>
+                    <p>Tamil • Telugu</p>
+                </div>
+
+                <div class="artist">
+                    <div class="artist-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9igr6miN2nJnfvaJw_FVEKDSeEcl83nOGFHZhS0705g&s" alt="Yuvan">
+                    </div>
+                    <h3>Yuvan Shankar Raja</h3>
+                    <p>Tamil</p>
+                </div>
+
+                <div class="artist">
+                    <div class="artist-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuaK3qqD4sW4nlSG9Xq5z5kgcZECr2wFMyPLhHHmI6jQ&s" alt="Pritam">
+                    </div>
+                    <h3>Pritam</h3>
+                    <p>Hindi</p>
+                </div>
+
+                <div class="artist">
+                    <div class="artist-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpGjCBF7rpyz-ugWSBDZV2OueliC1rkqjCc1etgxKAVA&s=10" alt="Karthik">
+                    </div>
+                    <h3>Karthik</h3>
+                    <p>Tamil</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Playlists -->
+        <section class="section" id="playlists">
+            <div class="section-heading">
+                <h2>
+                    <i class="fa-solid fa-layer-group"></i>
+                    Made For You
+                </h2>
+                <button>View All <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="playlist-grid">
+                <div class="playlist-card">
+                    <div class="playlist-art art-one">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                    <h3>Late Night Vibes</h3>
+                    <p>Soft sounds for quiet nights</p>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="playlist-art art-two">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3>High Energy</h3>
+                    <p>Turn up your energy</p>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="playlist-art art-three">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3>Feel Good</h3>
+                    <p>Songs that lift your mood</p>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="playlist-art art-four">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <h3>Peaceful Hours</h3>
+                    <p>Relax and let the music flow</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<!-- =========================================
+     WHY TUNEZZ
+========================================= -->
+
+<section class="why-tunezz">
+
+    <div class="section-header">
+        <h2>Why Tunezz?</h2>
+        <p>More than music. It's your mood, your moment.</p>
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <div class="why-icon">
+                <i class="fa-solid fa-headphones"></i>
+            </div>
+
+            <h3>Discover Music</h3>
+
+            <p>
+                Explore songs from different languages,
+                artists and moods.
+            </p>
+        </div>
+
+
+        <div class="why-card">
+            <div class="why-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+
+            <h3>Made For You</h3>
+
+            <p>
+                Find music that matches your mood
+                and listening style.
+            </p>
+        </div>
+
+
+        <div class="why-card">
+            <div class="why-icon">
+                <i class="fa-solid fa-earth-americas"></i>
+            </div>
+
+            <h3>Music Without Borders</h3>
+
+            <p>
+                Experience music from different
+                cultures, languages and artists.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     FOLLOW US
+========================================= -->
+
+<section class="follow-section">
+
+    <h2>FOLLOW US ON</h2>
+
+    <p>Stay connected with Tunezz</p>
+
+    <div class="follow-icons">
+
+        <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="#" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="#" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+    </div>
+
+</section>
+
+    <!-- Music player -->
+    <div class="music-player">
+
+        <div class="current-song">
+            <img id="playerImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5NMk9e8BHHdnBxx-cGnTGOyPioATSL2jqFgnpx2Sh6g&s=10" alt="Current song">
+            <div>
+                <h4 id="playerTitle">Tum Kya Mile</h4>
+                <p id="playerArtist">Arijit Singh & Shreya Ghoshal</p>
+            </div>
+            <button class="player-heart">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="player-controls">
+            <div class="time-row">
+                <span>1:32</span>
+                <div class="progress">
+                    <div class="progress-fill"></div>
+                    <input type="range" min="0" max="100" value="40">
+                </div>
+                <span>4:28</span>
+            </div>
+
+            <div class="control-buttons">
+                <button><i class="fa-solid fa-shuffle"></i></button>
+                <button><i class="fa-solid fa-backward-step"></i></button>
+                <button class="main-control" id="playButton" onclick="togglePlayer()">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button><i class="fa-solid fa-forward-step"></i></button>
+                <button><i class="fa-solid fa-repeat"></i></button>
+            </div>
+        </div>
+
+        <div class="volume-controls">
+            <i class="fa-solid fa-volume-high"></i>
+            <input type="range" min="0" max="100" value="70">
+            <i class="fa-solid fa-list"></i>
+            <i class="fa-solid fa-chart-simple"></i>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
